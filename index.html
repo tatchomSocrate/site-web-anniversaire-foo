@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <div>
-            <a href="/" class="logo">
+            <a href="#main-section" class="logo-desktop">
                 <h1>Fo’o Bamendjou</h1>
             </a>
             <div class="social-links">
@@ -22,15 +22,18 @@
             </div>
         </div>
         <nav class="nav">
+            <a href="#main-section" class="logo-mobile">
+                <h1>Fo’o Bamendjou</h1>
+            </a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
-                <li><a href="">A propos</a></li>
-                <li><a href="">Biographie</a></li>
-                <li><a href="">Anniversaire du Fo'o</a></li>
-                <li><a href="">Pèlerinage</a></li>
-                <li><a href="">Production Magazine</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#apropos-section">A propos</a></li>
+                <li><a href="#biographie-section">Biographie</a></li>
+                <li><a href="#anniv-section">Anniversaire du Fo'o</a></li>
+                <li><a href="#pelerinage-section">Pèlerinage</a></li>
+                <li><a href="#magazine-section">Production Magazine</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -39,8 +42,8 @@
             <div>
                 <p>Pour une reconnection à<br><span>notre ancestralité</span></p>
                 <div class="ctos">
-                    <span id="get-started" class="cto">Contribuer</span>
-                    <span id="more" class="cto">En savoir plus</span>
+                   <a href=""><span id="get-started" class="cto">Contribuer</span></a>
+                    <a href="#apropos-section"><span id="more" class="cto">En savoir plus</span></a>
                 </div>
             </div>
         </section>
@@ -70,7 +73,7 @@
                     de rendre un hommage bien mérité à <strong>leur guide et protecteur</strong>.
                 </p>
             </div>
-            <p class="label">Au programme :</p>
+            <p class="label">Au programme</p>
 
             <!-- Carrousel du programme avec Swiper (version professionnelle) -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
