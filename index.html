@@ -6,34 +6,311 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>90ieme anniversaire du chef Bamedjoun</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
-
     <header class="header">
-        <a href="/" class="logo">Fo’o de Bamendjou</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn"/>
-        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li><a href="">Production Magazine</a></li>
-            <li><a href="">Anniversaire du Fo'o</a></li>
-            <li><a href="">Pèlerinage</a></li>
-            <li><a href="">S’inscrire</a></li>
-            <li><a href="">Connexion</a></li>
-        </ul>
+        <div>
+            <a href="/" class="logo">
+                <h1>Fo’o Bamendjou</h1>
+            </a>
+            <div class="social-links">
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <nav class="nav">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="">A propos</a></li>
+                <li><a href="">Biographie</a></li>
+                <li><a href="">Anniversaire du Fo'o</a></li>
+                <li><a href="">Pèlerinage</a></li>
+                <li><a href="">Production Magazine</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
     <main>
-        <section id="main-section" class="section">
+        <section id="main-section">
             <div>
                 <p>Pour une reconnection à<br><span>notre ancestralité</span></p>
+                <div class="ctos">
+                    <span id="get-started" class="cto">Contribuer</span>
+                    <span id="more" class="cto">En savoir plus</span>
+                </div>
             </div>
         </section>
-    </main>
-    
-    <footer>
 
+        <!-- Section À propos avec carrousel textuel + pagination -->
+        <section id="apropos-section">
+            <h3>À propos</h3>
+            <div class="bamendjou-event">
+                <p class="intro">
+                    En <span class="year">2026</span> et plus précisément les
+                    <span class="date">6, 7 et 8 Février</span>,
+                    le peuple <span class="highlight">BAMENDJOU</span> vous invite à célébrer à
+                    <span class="place">BAMENDJOU</span> un moment unique — un triple évènement :
+                </p>
+
+                <ol class="event-list">
+                    <li><strong>La célébration des 90 ans de vie</strong> de Son Fo’o <span class="name">Tchendjou II
+                            Sokoudjou</span></li>
+                    <li><strong>La cérémonie de présentation des vœux</strong> à Son Fo’o</li>
+                    <li><strong>Le pèlerinage culturel et touristique</strong></li>
+                </ol>
+
+                <p class="closing">
+                    C’est le moment donné à tous ceux qui, à travers le <span class="highlight">Cameroun</span>,
+                    l’<span class="highlight">Afrique</span> et le <span class="highlight">Monde</span> — au peuple
+                    <span class="highlight">Bamendjou</span>, aux notables, amis, épouses, princes et princesses —
+                    de rendre un hommage bien mérité à <strong>leur guide et protecteur</strong>.
+                </p>
+            </div>
+            <p class="label">Au programme :</p>
+
+            <!-- Carrousel du programme avec Swiper (version professionnelle) -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="img1">
+                        <p>🎶 SOIRÉES ARTISTIQUES</p>
+                    </div>
+                    <div class="swiper-slide" id="img2">
+                        <p>🕊️ MARCHE MÉDITATIVE DANS LE SOUS-BOIS SACRÉ</p>
+                    </div>
+                    <div class="swiper-slide" id="img3">
+                        <p>🙏 ÉLÉVATIONS DES PRIÈRES</p>
+                    </div>
+                    <div class="swiper-slide" id="img4">
+                        <p>🤝 RENCONTRE ET ÉCHANGE AVEC LE FO’O</p>
+                    </div>
+                    <div class="swiper-slide" id="img5">
+                        <p>🍈 DISTRIBUTION DES JUJUBES PAR LE FO’O — SYMBOLE DE PAIX ET DE BÉNÉDICTION</p>
+                    </div>
+                    <div class="swiper-slide" id="img6">
+                        <p>👑 PARADE DES CASTES NOTABLIÈRES</p>
+                    </div>
+                    <div class="swiper-slide" id="img7">
+                        <p>💃 PARADE DES MA’AGNES</p>
+                    </div>
+                    <div class="swiper-slide" id="img8">
+                        <p>🌍 PARADE DES COMMUNAUTÉS</p>
+                    </div>
+                    <div class="swiper-slide" id="img9">
+                        <p>⚽ TOURNOI INTER-COMMUNAUTÉS</p>
+                    </div>
+                </div>
+                <!-- Boutons de navigation 
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>-->
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </section>
+        <section id="biographie-section">
+            <h3>Le fo’o de bamedjou, TCHENDJOU II SOKOUDJOU un mythe vivant</h3>
+            <div class="biography">
+                <h2 class="bio-title">FO’O TCHENDJOU II SOKOUDJOU</h2>
+
+                <p>
+                    Né au palais de la Chefferie en <span class="highlight">1936</span>,
+                    le <strong>Fo’o Tchendjou II Sokoudjou</strong> accède au trône de son père en
+                    <span class="highlight">1953</span> à l’âge de <span class="highlight">17 ans</span>.
+                    En <span class="highlight">2026</span>, il célébrera ses <strong>90 ans de vie</strong> et
+                    <strong>73 ans de règne</strong> à la tête du peuple <span class="highlight">Bamendjou</span>,
+                    guidant son peuple avec sagesse et protégeant son héritage culturel.
+                </p>
+
+                <p>
+                    Époux d’une trentaine de femmes et père de plus de <span class="highlight">300 enfants</span>,
+                    il a la grâce de voir sa cinquième génération. Homme d’exception, il vécut entre
+                    <span class="highlight">1947 et 1952</span> à <strong>Bikok</strong>, auprès de la famille de son
+                    père adoptif
+                    <strong>Atangana Simon</strong>, où il était connu sous le nom de <strong>Essoh</strong>.
+                    Successeur de ce dernier, il y dirige aussi une grande famille et conserve une parfaite maîtrise
+                    de la langue et des traditions de ce peuple.
+                </p>
+
+                <p>
+                    Devenu chef à une époque charnière — celle de la lutte pour l’indépendance — il s’engage
+                    courageusement auprès d’autres chefs traditionnels pour
+                    <strong>l’autodétermination du Cameroun</strong>.
+                    En <span class="highlight">octobre 1955</span>, à peine deux ans après son accession au trône,
+                    il dépose une <strong>pétition aux Nations Unies</strong> à Dschang, réclamant
+                    l’indépendance du Cameroun.
+                </p>
+
+                <p>
+                    Ses positions attirent la colère de l’administration coloniale, qui tente de le destituer.
+                    Assigné à résidence de <span class="highlight">1957 à 1959</span>, il endure des
+                    <strong>tortures</strong>, des <strong>tentatives d’assassinat</strong> et
+                    l’<strong>incendie de son palais</strong>.
+                    Il est ensuite emprisonné et transféré dans plusieurs prisons du pays — Bafoussam, Dschang, Bafia,
+                    Yoko, Nanga-Eboko, Doumé, Yaoundé — avant d’être libéré en <span class="highlight">1961</span>
+                    par grâce présidentielle d’<strong>Ahidjo</strong>.
+                </p>
+
+                <p>
+                    Malgré ces épreuves, le peuple <span class="highlight">Bamendjou</span> reste fidèle à son Fo’o,
+                    repoussant toute tentative de remplacement.
+                    Architecte visionnaire, il rebâtit lui-même le <strong>palais royal</strong>, aujourd’hui symbole
+                    majeur de l’architecture <strong>Bamiléké</strong>.
+                </p>
+
+                <p>
+                    Travailleur infatigable, il est aussi un <strong>grand agriculteur</strong>,
+                    producteur de banane plantain et de café arabica.
+                    Il a siégé dans plusieurs institutions agricoles telles que la <strong>CAPLAMI</strong> et
+                    l’<strong>UCCAO</strong>, et préside aujourd’hui le
+                    <strong>SNAPCAM</strong> (Syndicat National des Agriculteurs et Planteurs du Cameroun).
+                </p>
+
+                <p>
+                    Gardien inflexible de la tradition, il a su préserver la richesse culturelle de son peuple
+                    face aux assauts de la modernité.
+                    Grâce à lui, cette culture demeure un socle solide pour les générations présentes et futures.
+                </p>
+
+                <p class="closing">
+                    En cette occasion, le peuple <span class="highlight">Bamendjou</span> rend un
+                    <strong>hommage exceptionnel</strong> à son Fo’o,
+                    dont la sagesse et la persévérance permettent aujourd’hui à la culture africaine
+                    de rayonner dans un monde en quête d’identité.
+                    <em>Qu’il vive encore longtemps pour inspirer les générations à venir.</em>
+                </p>
+            </div>
+
+        </section>
+        <section id="anniv-section">
+            <h3>Anniversaire du Fo’o et présentation des voeux</h3>
+            <div class="event-invitation">
+                <h2 class="event-title">Célébration du FO’O TCHENDJOU II SOKOUDJOU</h2>
+
+                <p>
+                    Le <span class="date">dimanche 8 février 2026</span>, le peuple
+                    <span class="highlight">Bamendjou</span> célèbre son icône, son guide, son protecteur
+                    <strong>FO’O TCHENDJOU II SOKOUDJOU</strong>.
+                </p>
+
+                <p>
+                    À cette occasion, une <strong>cérémonie d’anniversaire grandiose</strong> et la
+                    <strong>traditionnelle cérémonie de présentation des vœux</strong> au Fo’o seront organisées.
+                </p>
+
+                <p>
+                    Que vous soyez notable, épouse, ami, connaissance, sympathisant, prince ou princesse,
+                    si vous souhaitez contribuer à l’organisation de cette cérémonie ou participer à l’achat
+                    d’un cadeau d’anniversaire, <strong>veillez à donner votre part de sel ou d’huile</strong>
+                    en remplissant le formulaire suivant :
+                </p>
+
+                <p>
+                    Vous pouvez également laisser vos vœux et partager des photos mémorables en lien avec le Fo’o
+                    via le lien suivant :
+                    <a href="#" class="cta-link">Page du magazine / Facebook / Email</a>
+                </p>
+            </div>
+
+        </section>
+        <section id="pelerinage-section">
+            <h3>Pèlerinage culturel et touristique</h3>
+            <div class="pilgrimage">
+                <h2 class="pilgrimage-title">Pèlerinage Culturel et Touristique</h2>
+
+                <p>
+                    Dans un monde en perte de repères et face à l’uniformisation, le
+                    <strong>Fo’o de Bamendjou</strong> a décidé d’organiser périodiquement, au sein de sa chefferie
+                    et de son village, un <strong>pèlerinage culturel et touristique</strong>.
+                </p>
+
+                <p>
+                    Face aux demandes multiples d’hommes et de femmes de divers horizons — village Bamendjou,
+                    région de l’Ouest, Cameroun, Afrique et Monde — désireux de découvrir le fondement de la culture
+                    <span class="highlight">Bamendjou</span> et d’opérer un retour aux sources, il est devenu essentiel
+                    de mettre en place cet évènement. Pendant le pèlerinage, des pans entiers de la tradition sont
+                    expliqués et les pèlerins ont l’occasion d’échanger directement avec le Fo’o.
+                </p>
+
+                <p>
+                    L’édition de cette année aura lieu le
+                    <span class="date">samedi 7 février 2026</span>.
+                    Les frais de participation s’élèvent à <strong>15 000 FCFA</strong> par pèlerin.
+                </p>
+
+                <p>
+                    Pour participer à l’évènement, veuillez remplir le formulaire suivant. Une fois validé,
+                    vous recevrez la confirmation de votre participation. Les <strong>badges</strong> seront remis
+                    sur la place du marché de la chefferie avant le début du pèlerinage.
+                </p>
+
+                <p class="note">
+                    NB : Seuls les détenteurs du badge auront accès au circuit du pèlerinage.
+                </p>
+            </div>
+
+        </section>
+        <section id="magazine-section">
+            <h3>Production du magazine</h3>
+            <div class="tribute-magazine">
+                <h2 class="magazine-title">Magazine Hommage au FO’O de Bamendjou</h2>
+
+                <p>
+                    À l’occasion de la célébration de l’anniversaire du <strong>Fo’o de Bamendjou</strong>,
+                    un <strong>magazine retraçant sa vie exceptionnelle</strong> sera produit.
+                </p>
+
+                <p>
+                    Ce magazine publiera également les meilleurs témoignages et photos marquantes envoyés par
+                    ses notables, amis, connaissances, admirateurs, épouses, princes et princesses.
+                </p>
+
+                <p>
+                    Vos vœux, témoignages et photos peuvent être envoyés par email à :
+                    <a href="mailto:ffff@outlook.com" class="cta-link">ffff@outlook.com</a>
+                    ou via la page Facebook de l’évènement à :
+                    <a href="#" class="cta-link">Page Facebook</a>.
+                </p>
+
+                <p>
+                    Si vous souhaitez participer à la production du magazine par une contribution financière,
+                    veuillez remplir le formulaire suivant :
+                    <a href="#" class="cta-link">Formulaire de contribution</a>
+                </p>
+            </div>
+
+        </section>
+        <section id="contact-section">
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h3>Contactez-nous</h3>
+            <p>Pour toute information ou participation, vous pouvez nous joindre via :</p>
+            <ul class="contact-list">
+                <li>
+                    <a href="mailto:ffff@outlook.com" class="footer-link">
+                        📧 Email : ffff@outlook.com
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/237699999999" target="_blank" class="footer-link">
+                        💬 WhatsApp : +237 699 999 999
+                    </a>
+                </li>
+            </ul>
+            <p class="footer-note">&copy; 2026 Peuple Bamendjou. Tous droits réservés.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="style.js"></script>
 </body>
 
 </html>
