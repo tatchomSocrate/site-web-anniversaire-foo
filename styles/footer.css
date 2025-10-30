@@ -1,0 +1,121 @@
+.site-footer {
+    position: relative;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background: url("../images/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.site-footer>div {
+    padding: 8rem 0rem 2rem 0rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: var(--main-background);
+    overflow: hidden;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.contact-list li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.footer-note {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.custom-shape-divider-top-mobile,
+.custom-shape-divider-top-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-mobile svg,
+.custom-shape-divider-top-desktop svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 132px;
+}
+
+.custom-shape-divider-top-mobile .shape-fill,
+.custom-shape-divider-top-desktop .shape-fill {
+    fill: #FFFFFF;
+}
+
+#instru {
+    position: absolute;
+    z-index: 1000;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-content {
+    display: block;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.footer-content .sep {
+    height: 1px;
+    background-color: var(--light-color);
+    width: 100vw;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.custom-shape-divider-top-desktop {
+    display: none;
+}
+
+.custom-shape-divider-top-mobile {
+    display: block;
+}
+
+.fa-envelope, .fa-phone{
+    margin-right: 5px;
+}
+
+@media (min-width:48em) {
+    .custom-shape-divider-top-desktop {
+        display: block;
+    }
+
+    .custom-shape-divider-top-mobile {
+        display: none;
+    }
+}

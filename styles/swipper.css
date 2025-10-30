@@ -1,0 +1,110 @@
+
+#img1 {
+  background-image: url("../images/img1.jpg");
+}
+
+#img2 {
+  background-image: url("../images/img2.jpg");
+}
+
+#img3 {
+  background-image: url("../images/img3.jpg");
+}
+
+#img4 {
+  background-image: url("../images/img4.jpg");
+}
+
+#img5 {
+  background-image: url("../images/img5.jpg");
+}
+
+#img6 {
+  background-image: url("../images/img6.jpg");
+}
+
+#img7 {
+  background-image: url("../images/img7.jpg");
+}
+
+#img8 {
+  background-image: url("../images/img8.jpg");
+}
+
+#img9 {
+  background-image: url("../images/img9.jpg");
+}
+
+/* --- Swiper carousel styling --- */
+/* Conteneur global du carrousel */
+.mySwiper {
+  width: 100%;
+  margin: 30px auto;
+  padding: 30px 0px;
+  /* espace avant la pagination */
+}
+
+.mySwiper .swiper-slide {
+  user-select: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 50vh;
+  flex-direction: column-reverse;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper .swiper-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Pagination --- */
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+  transition: background 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #b91c1c;
+}
+
+/* --- Navigation arrows --- */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b91c1c;
+  transition: color 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #991b1b;
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 768px) {
+  .mySwiper .swiper-slide {
+    font-size: 1rem;
+    padding: 40px 0px;
+  }
+}
+
+/* Pagination en dessous */
+.swiper-pagination {
+  position: static !important;
+  /* enlève la position absolue par défaut de Swiper */
+  text-align: center;
+}
+
+.swiper-slide p {
+  color: white;
+  background: var(--primary-color);
+}
