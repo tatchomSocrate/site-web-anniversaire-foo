@@ -1,0 +1,45 @@
+.event-invitation {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  color: var(--primary-color);
+  line-height: 1.7;
+}
+
+.event-invitation p {
+  text-align: justify;
+}
+
+.event-invitation .highlight {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.event-invitation .date {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.event-invitation strong {
+  color: var(--primary-color);
+}
+
+#anniv-section {
+  padding-top: 8rem;
+}
+
+.menu li:nth-child(3) a {
+ color: white;
+}
+
+#contact-section{
+  margin-bottom: 20rem;
+}
+
+.note {
+  font-style: italic;
+  background: var(--secondary-color-b);
+  padding: 0.8rem 1rem;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  margin-top: 1rem;
+}

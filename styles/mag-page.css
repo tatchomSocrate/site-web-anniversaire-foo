@@ -1,0 +1,43 @@
+.tribute-magazine {
+  max-width: var(--max-width);
+  margin: 5rem auto;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+  line-height: 1.7;
+}
+
+.tribute-magazine p {
+  text-align: justify;
+}
+
+.tribute-magazine strong {
+  color: var(--primary-color);
+}
+
+.tribute-magazine .cta-link {
+  display: inline-block;
+  margin-top: 0.2rem;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.tribute-magazine .cta-link:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+#magazine-section {
+  padding-top: 8rem;
+}
+
+.menu li:nth-child(5) a {
+ color: white;
+}
+
+#contact-section{
+  margin-bottom: 20rem;
+}

@@ -1,27 +1,3 @@
-:root {
-  --primary-color: #102305;
-  --secondary-color: #b8c59b;
-  --light-color: #59FF00;
-  --main-background: rgba(16, 39, 5, 0.75);
-  --footer-background: rgba(16, 39, 5, 0.9);
-  --secondary-color-b: rgb(184, 197, 155, 0.2);
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-.label {
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /* main section */
 #main-section {
   height: 100vh;
@@ -41,7 +17,6 @@ body {
   justify-content: center;
 }
 
-
 #main-section p {
   color: white;
   font-size: 38px;
@@ -51,35 +26,6 @@ body {
 #main-section p span {
   font-weight: 100;
   color: #59FF00;
-}
-
-.ctos {
-  margin-top: 70px;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.ctos a {
-  text-decoration: none;
-}
-
-.cto {
-  display: block;
-  width: 150px;
-  height: 40px;
-  border-radius: 20px;
-  color: white;
-  text-align: center;
-  align-content: center;
-}
-
-#get-started {
-  background-color: #59FF00;
-  margin-bottom: 50px;
-}
-
-#more {
-  border: 2px solid rgba(255, 255, 255, .4);
 }
 
 @media (min-width:48em) {
@@ -92,39 +38,10 @@ body {
   #main-section p span {
     font-weight: 100;
   }
-
-  #main-section~section {
-    width: 80vw;
-    margin: 0 auto;
-  }
 }
 
-/***************************************************************/
-section {
-  width: 100%;
-}
-
-/* === Section À propos === */
-#main-section~section {
-  width: 90vw;
-  margin: 0 auto;
-}
-
-h3 {
-  text-align: center;
-  font-size: 2rem;
-  margin: 100px 0px;
-  position: relative;
-}
-
-h3::after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: var(--light-color);
-  margin: 10px auto 0;
-  border-radius: 2px;
+#apropos-section {
+  padding-top: 5rem;
 }
 
 #apropos-section p,
@@ -138,10 +55,9 @@ h3::after {
 }
 
 .bamendjou-event {
-  padding: 2.5rem;
-  max-width: 700px;
-  margin: 3rem auto;
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  max-width: var(--max-width);
+  margin: 3rem auto 0 auto;
+  margin-bottom: 5rem;
   color: #2b1f15;
   line-height: 1.8;
 }
@@ -177,26 +93,6 @@ h3::after {
   color: var(--primary-color);
 }
 
-.bamendjou-event .event-list {
-  margin: 1.5rem 0;
-  padding-left: 1.5rem;
-  list-style: decimal-leading-zero;
-}
-
-.bamendjou-event .event-list li {
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
-  background: var(--secondary-color-b);
-  border-left: 4px solid var(--primary-color);
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.bamendjou-event .event-list li:hover {
-  transform: translateX(5px);
-}
-
 .bamendjou-event .closing {
   font-size: 1.1rem;
   margin-top: 1.5rem;
@@ -205,177 +101,6 @@ h3::after {
   padding-top: 1.5rem;
 }
 
-.biography {
-  border-radius: 18px;
-  padding: 3rem;
-  margin: 3rem auto;
-  max-width: 850px;
-  line-height: 1.9;
-}
-
-.bio-title {
-  text-align: center;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 1.5rem;
-}
-
-.biography p {
-  margin-bottom: 1.5rem;
-  text-align: justify;
-}
-
-.biography strong {
-  font-weight: 600;
-}
-
-.biography .highlight {
-  font-weight: 600;
-}
-
-.biography .closing {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  font-style: italic;
-  font-size: 1.05rem;
-  background: var(--secondary-color-b);
-  border-radius: 12px;
-  padding: 1.5rem;
-}
-
-.biography .closing em {
-  color: #8b4513;
-}
-
-
-.event-invitation {
-  padding: 2.5rem;
-  max-width: 750px;
-  margin: 3rem auto;
-  color: var(--primary-color);
-  font-family: "Poppins", sans-serif;
-  line-height: 1.7;
-}
-
-.event-title {
-  text-align: center;
-  font-size: 1.9rem;
-  color: var(--primary-color);
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  letter-spacing: 1px;
-}
-
-.event-invitation p {
-  margin-bottom: 1.3rem;
-  text-align: justify;
-}
-
-.event-invitation .highlight {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-.event-invitation .date {
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-.event-invitation strong {
-  color: var(--primary-color);
-}
-
-.pilgrimage {
-  padding: 2.5rem;
-  max-width: 750px;
-  margin: 3rem auto;
-  font-family: "Poppins", sans-serif;
-  color: var(--primary-color);
-  line-height: 1.7;
-}
-
-.pilgrimage-title {
-  text-align: center;
-  font-size: 1.8rem;
-  color: var(--primary-color);
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  letter-spacing: 1px;
-}
-
-.pilgrimage p {
-  margin-bottom: 1.3rem;
-  text-align: justify;
-}
-
-.pilgrimage .highlight {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-.pilgrimage .date {
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-.pilgrimage strong {
-  color: var(--primary-color);
-}
-
-.pilgrimage .note {
-  font-style: italic;
-  background: var(--secondary-color-b);
-  padding: 0.8rem 1rem;
-  border-left: 4px solid var(--primary-color);
-  border-radius: 8px;
-  margin-top: 1rem;
-}
-
-
-.tribute-magazine {
-  padding: 2.5rem;
-  max-width: 750px;
-  margin: 12rem auto;
-  font-family: "Poppins", sans-serif;
-  color: var(--primary-color);
-  line-height: 1.7;
-}
-
-.magazine-title {
-  text-align: center;
-  font-size: 1.8rem;
-  color: var(--primary-color);
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  letter-spacing: 1px;
-}
-
-.tribute-magazine p {
-  margin-bottom: 1.3rem;
-  text-align: justify;
-}
-
-.tribute-magazine strong {
-  color: var(--primary-color);
-}
-
-.tribute-magazine .cta-link {
-  display: inline-block;
-  margin-top: 0.2rem;
-  padding: 0.4rem 0.8rem;
-  background-color: var(--primary-color);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.tribute-magazine .cta-link:hover {
-  background-color: var(--primary-color);
-  transform: translateY(-2px);
+.menu li:nth-child(1) a {
+ color: white;
 }

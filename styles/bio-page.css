@@ -1,0 +1,40 @@
+.biography {
+  margin: 0 auto 20rem auto;
+  max-width: var(--max-width);
+  line-height: 1.9;
+}
+
+.biography p {
+  text-align: justify;
+}
+
+.biography strong {
+  font-weight: 600;
+}
+
+.biography .highlight {
+  font-weight: 600;
+}
+
+.biography .closing {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  font-style: italic;
+  font-size: 1.05rem;
+  background: var(--secondary-color-b);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.biography .closing em {
+  color: #8b4513;
+}
+
+#biographie-section {
+  padding-top: 8rem;
+}
+
+.menu li:nth-child(2) a {
+ color: white;
+}

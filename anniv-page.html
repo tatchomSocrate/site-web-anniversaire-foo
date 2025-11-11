@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>90ieme anniversaire du chef Bamedjoun</title>
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/participer.css">
-    <link rel="stylesheet" href="styles/swipper.css">
+    <link rel="stylesheet" href="styles/anniv-page.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header scrolled">
         <div>
             <a href="#main-section" class="logo-desktop">
                 <h1>Fo’o Bamendjou</h1>
@@ -34,7 +34,7 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
-                <li><a href="#apropos-section">A propos</a></li>
+                <li><a href="index.html#apropos-section">A propos</a></li>
                 <li><a href="bio-page.html">Biographie</a></li>
                 <li><a href="anniv-page.html">Anniversaire du Fo'o</a></li>
                 <li><a href="pel-page.html">Pèlerinage</a></li>
@@ -43,147 +43,119 @@
             </ul>
         </nav>
     </header>
-    <section id="main-section">
-        <div>
-            <p>Les <span>6,7 et 8 février 2026,</span><br>triple événements à Bamendjou</p>
-        </div>
-    </section>
     <main>
-        <!-- Section À propos avec carrousel textuel + pagination -->
-        <section id="apropos-section">
-            <h3>À propos</h3>
-            <div class="bamendjou-event">
-                <p class="intro">
-                    En <span class="year">2026</span> et plus précisément les
-                    <span class="date">6, 7 et 8 Février</span>,
-                    le peuple <span class="highlight">BAMENDJOU</span> vous invite à célébrer à
-                    <span class="place">BAMENDJOU</span> un moment unique — un triple évènement :
+        <section id="anniv-section">
+            <h3>Anniversaire du Fo’o et présentation des voeux</h3>
+            <div class="event-invitation">
+                <p>
+                    Par son aura, sa vision, <strong>Fo’o TCHENDJOU II SOKOUDJOU</strong> se positionne aujourd'hui
+                    comme une
+                    personne ressource, le gardien de la culture que chacun rêve de rencontrer et écouter.
+                    Son palais ne désempli plus. Venu des 4 coins du monde, ils sont des hommes politiques,
+                    des religieux, des chercheurs, des hommes de cultures et bien d’autres et à chacun
+                    <strong>Fo’o TCHENDJOU II SOKOUDJOU</strong> lui donne sa part.
+                </p>
+                <p>
+                    Son amour pour son pays le Cameroun n'est plus a démontré et seule la paix et la
+                    justice guide ses pensées. Autour de lui vous verrez toujours 2
+                    éléments qui lui sont chers, le jujube et l'arbre de paix
                 </p>
 
-                <ol class="event-list">
-                    <li><strong>La célébration des 90 ans de vie</strong> de Son Fo’o <span class="name">Tchendjou II
-                            Sokoudjou</span></li>
-                    <li><strong>La cérémonie de présentation des vœux</strong> à Son Fo’o</li>
-                    <li><strong>Le pèlerinage culturel et touristique</strong></li>
-                </ol>
+                <p>
+                    Le <span class="date">dimanche 8 février 2026</span>, le Peuple <span
+                        class="highlight">Bamendjou</span>
+                    célèbre son icone, son guide, son protecteur le <strong>FO’O TCHENDJOU II SOKOUDJOU</strong>.
+                </p>
 
-                <p class="closing">
-                    C’est le moment donné à tous ceux qui sont intéressés à travers le <span class="highlight">Cameroun</span>,
-                    l’<span class="highlight">Afrique</span> et le <span class="highlight">Monde</span> — au peuple
-                    <span class="highlight">Bamendjou</span>, aux notables, amis et connaissances, épouses, princes et princesses —
-                    de rendre un hommage bien mérité à <strong>son guide, et son protecteur</strong>.
+                <p>
+                    A cette occasion une <strong>cérémonie d’anniversaire grandiose</strong> et la traditionnelle
+                    cérémonie de
+                    <strong> présentation des vœux au FO’O</strong> seront organisé.
+                </p>
+                <p>
+                    Que vous soyez notables, épouses, amis, connaissances, sympathisants, princes ou princesses si
+                    vous souhaitez apporter une contribution à l’organisation de cette cérémonie, participer
+                    à l’achat d’un cadeau d’anniversaire <strong>veillez apporter votre part</strong> en remplissant le
+                    formulaire suivant :
+                </p>
+
+            </div>
+        </section>
+        <form id="fundForm">
+            <h2>Pour une bonne organisation de l’évènement, nous vous prions de confirmer votre présence en remplissant
+                ce formulaire</h2>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+
+            <label for="titre">Titre :</label>
+            <select id="titre" name="titre" required>
+                <option value="" disabled selected>Choisir un titre</option>
+                <option>Docteur</option>
+                <option>Ing.</option>
+                <option>Prof.</option>
+                <option>Honnorable</option>
+                <option>Maire</option>
+                <option>Ministre</option>
+                <option>Prêtre</option>
+                <option>Évêque</option>
+                <option>Pasteur</option>
+                <option>Imam</option>
+                <option>Préfet</option>
+                <option>Sous-Préfet</option>
+                <option>Commandant</option>
+                <option>Commissaire</option>
+                <option>Capitaine</option>
+                <option>Colonel</option>
+                <option>Général</option>
+                <option>Technicien</option>
+                <option>Directeur</option>
+                <option>Chef de communauté</option>
+                <option>Monsieur</option>
+                <option>Madame</option>
+            </select>
+
+            <label for="titre-traditionnel">Titre de Notabilité :</label>
+            <select id="titre-traditionnel" name="titre-traditionnel" required>
+                <option value="" disabled selected>Caste de notable</option>
+                <option>MEUKAMNEVEU</option>
+                <option>MEULIEFO’O</option>
+                <option>MEUTOUODEU</option>
+                <option>WENDA</option>
+                <option>MEUTOUFO’O</option>
+            </select>
+
+            <label for="ville">Ville d'origine :</label>
+            <input type="text" id="ville" name="ville" placeholder="Ex: Douala, Yaoundé..." required>
+
+            <label for="numero">Numéro Mobile Money :</label>
+            <input type="tel" id="numero" name="numero" placeholder="Ex: 6XX XXX XXX" required>
+
+            <label for="montant">Montant à envoyer (FCFA) :</label>
+            <input type="number" id="montant" name="montant" min="100" placeholder="Ex: 5000" required>
+
+            <button type="submit">Envoyer la contribution</button>
+
+            <div class="footer">Merci pour votre générosité 💚</div>
+        </form>
+
+            <div class="event-invitation">
+                <p>
+                    Vous pouvez également laissé vos vœux et poster des photos mémorables du Fo’o 
+                    que vous disposez ou en lien avec les étapes importantes de sa vie en suivant 
+                    le lien suivant (Page du magazine >>> partie ou on accède la page Facebook 
+                    ou à l’adresse E-Mail pour laisser les vœux et ajouter des photos mémorielles)
+                </p>
+                <p class="note">
+                    NB : Pour des raisons organisationnelles, seul les vœux et 
+                    photos envoyé au plus tard le 31 décembre 2025 seront 
+                    considérés pour la production du magazine.
                 </p>
             </div>
-            <p class="label">Au programme</p>
 
-            <!-- Carrousel du programme avec Swiper (version professionnelle) -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" id="img1">
-                        <p>SOIRÉES ARTISTIQUES</p>
-                    </div>
-                    <div class="swiper-slide" id="img2">
-                        <p>MARCHE MÉDITATIVE DANS LE SOUS-BOIS SACRÉ</p>
-                    </div>
-                    <div class="swiper-slide" id="img3">
-                        <p>ÉLÉVATIONS DES PRIÈRES</p>
-                    </div>
-                    <div class="swiper-slide" id="img4">
-                        <p>RENCONTRE ET ÉCHANGE AVEC LE FO’O</p>
-                    </div>
-                    <div class="swiper-slide" id="img5">
-                        <p>DISTRIBUTION DES JUJUBES PAR LE FO’O — SYMBOLE DE PAIX ET DE BÉNÉDICTION</p>
-                    </div>
-                    <div class="swiper-slide" id="img6">
-                        <p>PARADE DES CASTES NOTABLIÈRES</p>
-                    </div>
-                    <div class="swiper-slide" id="img7">
-                        <p>PARADE DES MA’AGNES</p>
-                    </div>
-                    <div class="swiper-slide" id="img8">
-                        <p>PARADE DES COMMUNAUTÉS</p>
-                    </div>
-                    <div class="swiper-slide" id="img9">
-                        <p>TOURNOI INTER-COMMUNAUTÉS</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-        </section>
-        <section id="participer-section">
-            <h3>L' héritage Bamendjou s' écrit avec vous</h3>
-            <div class="participer-rubriques">
-                <div class="participer-item">
-                    <a href="anniv-page.html">
-                        <div> <span class="svg-background"><svg width="34" height="38" viewBox="0 0 34 38" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18.1333 0.38C17.8064 0.133338 17.4087 0 17 0C16.5913 0 16.1936 0.133338 15.8667 0.38C15.0797 0.986438 14.3541 1.6693 13.7001 2.4187C12.7122 3.5378 11.3333 5.4245 11.3333 7.6C11.3333 9.11173 11.9304 10.5616 12.9931 11.6305C14.0558 12.6995 15.4971 13.3 17 13.3H5.66667C4.16377 13.3 2.72243 13.9005 1.65973 14.9695C0.597022 16.0384 0 17.4883 0 19V22.8C0 25.1484 2.66522 26.4898 4.53333 25.08L5.79322 24.13C6.12018 23.8833 6.51786 23.75 6.92656 23.75C7.33525 23.75 7.73293 23.8833 8.05989 24.13L8.56233 24.51C9.54321 25.25 10.7362 25.65 11.9623 25.65C13.1884 25.65 14.3815 25.25 15.3623 24.51L15.8667 24.13C16.1936 23.8833 16.5913 23.75 17 23.75C17.4087 23.75 17.8064 23.8833 18.1333 24.13L18.6377 24.51C19.6185 25.25 20.8116 25.65 22.0377 25.65C23.2638 25.65 24.4568 25.25 25.4377 24.51L25.9401 24.13C26.2671 23.8833 26.6647 23.75 27.0734 23.75C27.4821 23.75 27.8798 23.8833 28.2068 24.13L29.4667 25.08C31.3348 26.4898 34 25.1484 34 22.8V19C34 17.4883 33.403 16.0384 32.3403 14.9695C31.2776 13.9005 29.8362 13.3 28.3333 13.3H17C18.5029 13.3 19.9442 12.6995 21.0069 11.6305C22.0696 10.5616 22.6667 9.11173 22.6667 7.6C22.6667 5.4245 21.2878 3.5378 20.2999 2.4187C19.6463 1.6777 18.921 0.9747 18.1333 0.38ZM1.88889 29.2885V34.2C1.88889 35.2078 2.2869 36.1744 2.99537 36.887C3.70384 37.5996 4.66474 38 5.66667 38H28.3333C29.3353 38 30.2962 37.5996 31.0046 36.887C31.7131 36.1744 32.1111 35.2078 32.1111 34.2V29.2885C31.6715 29.4482 31.1991 29.4945 30.7372 29.4231C30.2752 29.3518 29.8384 29.165 29.4667 28.88L28.2068 27.93C27.8798 27.6833 27.4821 27.55 27.0734 27.55C26.6647 27.55 26.2671 27.6833 25.9401 27.93L25.4377 28.31C24.4568 29.05 23.2638 29.45 22.0377 29.45C20.8116 29.45 19.6185 29.05 18.6377 28.31L18.1333 27.93C17.8064 27.6833 17.4087 27.55 17 27.55C16.5913 27.55 16.1936 27.6833 15.8667 27.93L15.3623 28.31C14.3815 29.05 13.1884 29.45 11.9623 29.45C10.7362 29.45 9.54321 29.05 8.56233 28.31L8.05989 27.93C7.73293 27.6833 7.33525 27.55 6.92656 27.55C6.51786 27.55 6.12018 27.6833 5.79322 27.93L4.53333 28.88C4.16163 29.165 3.72482 29.3518 3.26285 29.4231C2.80087 29.4945 2.32849 29.4482 1.88889 29.2885Z"
-                                        fill="#000000" />
-                                </svg>
-                            </span>
-                            <span class="part-title">Anniversaire du Fo'o</span>
-                        </div>
-                        <p>
-                            Le <span class="date">dimanche 8 février 2026</span>, le peuple
-                            <span class="highlight">Bamendjou</span> célèbre son icône, son guide, son protecteur
-                            <strong>FO’O TCHENDJOU II SOKOUDJOU</strong>.
-                            À cette occasion, une <strong>cérémonie d’anniversaire grandiose</strong> et la
-                            <strong>traditionnelle cérémonie de présentation des vœux</strong> au Fo’o seront
-                            organisées.
-                        </p>
-                        <button>Participer</button>
-                    </a>
-                </div>
-                <div class="participer-item">
-                    <a href="pel-page.html">
-                        <div>
-                            <span class="svg-background">
-                                <svg width="34" height="38" viewBox="0 0 34 38" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18.1333 0.38C17.8064 0.133338 17.4087 0 17 0C16.5913 0 16.1936 0.133338 15.8667 0.38C15.0797 0.986438 14.3541 1.6693 13.7001 2.4187C12.7122 3.5378 11.3333 5.4245 11.3333 7.6C11.3333 9.11173 11.9304 10.5616 12.9931 11.6305C14.0558 12.6995 15.4971 13.3 17 13.3H5.66667C4.16377 13.3 2.72243 13.9005 1.65973 14.9695C0.597022 16.0384 0 17.4883 0 19V22.8C0 25.1484 2.66522 26.4898 4.53333 25.08L5.79322 24.13C6.12018 23.8833 6.51786 23.75 6.92656 23.75C7.33525 23.75 7.73293 23.8833 8.05989 24.13L8.56233 24.51C9.54321 25.25 10.7362 25.65 11.9623 25.65C13.1884 25.65 14.3815 25.25 15.3623 24.51L15.8667 24.13C16.1936 23.8833 16.5913 23.75 17 23.75C17.4087 23.75 17.8064 23.8833 18.1333 24.13L18.6377 24.51C19.6185 25.25 20.8116 25.65 22.0377 25.65C23.2638 25.65 24.4568 25.25 25.4377 24.51L25.9401 24.13C26.2671 23.8833 26.6647 23.75 27.0734 23.75C27.4821 23.75 27.8798 23.8833 28.2068 24.13L29.4667 25.08C31.3348 26.4898 34 25.1484 34 22.8V19C34 17.4883 33.403 16.0384 32.3403 14.9695C31.2776 13.9005 29.8362 13.3 28.3333 13.3H17C18.5029 13.3 19.9442 12.6995 21.0069 11.6305C22.0696 10.5616 22.6667 9.11173 22.6667 7.6C22.6667 5.4245 21.2878 3.5378 20.2999 2.4187C19.6463 1.6777 18.921 0.9747 18.1333 0.38ZM1.88889 29.2885V34.2C1.88889 35.2078 2.2869 36.1744 2.99537 36.887C3.70384 37.5996 4.66474 38 5.66667 38H28.3333C29.3353 38 30.2962 37.5996 31.0046 36.887C31.7131 36.1744 32.1111 35.2078 32.1111 34.2V29.2885C31.6715 29.4482 31.1991 29.4945 30.7372 29.4231C30.2752 29.3518 29.8384 29.165 29.4667 28.88L28.2068 27.93C27.8798 27.6833 27.4821 27.55 27.0734 27.55C26.6647 27.55 26.2671 27.6833 25.9401 27.93L25.4377 28.31C24.4568 29.05 23.2638 29.45 22.0377 29.45C20.8116 29.45 19.6185 29.05 18.6377 28.31L18.1333 27.93C17.8064 27.6833 17.4087 27.55 17 27.55C16.5913 27.55 16.1936 27.6833 15.8667 27.93L15.3623 28.31C14.3815 29.05 13.1884 29.45 11.9623 29.45C10.7362 29.45 9.54321 29.05 8.56233 28.31L8.05989 27.93C7.73293 27.6833 7.33525 27.55 6.92656 27.55C6.51786 27.55 6.12018 27.6833 5.79322 27.93L4.53333 28.88C4.16163 29.165 3.72482 29.3518 3.26285 29.4231C2.80087 29.4945 2.32849 29.4482 1.88889 29.2885Z"
-                                        fill="#59FF00" />
-                                </svg>
-                            </span>
-                            <span class="part-title">Pelérinage</span>
-                        </div>
-                        <p>
-                            Dans un monde en perte de repères et face à l’uniformisation, le
-                            <strong>Fo’o de Bamendjou</strong> a décidé d’organiser périodiquement, au sein de sa
-                            chefferie
-                            et de son village, un <strong>pèlerinage culturel et touristique</strong>.
-                        </p>
-                        <button>Participer</button>
-                    </a>
-                </div>
-                <div class="participer-item">
-                    <a href="mag-page.html">
-                        <div> <span class="svg-background"> <svg width="45" height="38" viewBox="0 0 45 38" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M17.4585 2.46996C14.0716 0.831466 9.33766 0.0288431 2.99975 0.000347567C2.40202 -0.00788089 1.81602 0.168726 1.31989 0.506618C0.912668 0.785521 0.579318 1.16155 0.349165 1.60162C0.119013 2.04169 -0.000889014 2.53233 4.96258e-06 3.03037V30.2056C4.96258e-06 32.0426 1.2899 33.4284 2.99975 33.4284C9.66201 33.4284 16.3449 34.0591 20.3477 37.8927C20.4024 37.9454 20.4713 37.9806 20.5456 37.994C20.62 38.0074 20.6965 37.9983 20.7658 37.968C20.8352 37.9376 20.8941 37.8873 20.9355 37.8232C20.9768 37.7592 20.9986 37.6843 20.9982 37.6078V5.58736C20.9984 5.37134 20.9527 5.1578 20.8644 4.96117C20.7761 4.76454 20.6472 4.58939 20.4864 4.44754C19.5695 3.65331 18.5511 2.98811 17.4585 2.46996ZM43.6764 0.503768C43.18 0.166717 42.594 -0.00890355 41.9965 0.000347567C35.6586 0.0288431 30.9246 0.827667 27.5377 2.46996C26.4452 2.98716 25.4265 3.65106 24.5089 4.44375C24.3484 4.5858 24.2198 4.76101 24.1317 4.95761C24.0435 5.15421 23.998 5.36764 23.998 5.58356V37.6059C23.998 37.6794 24.0193 37.7513 24.0595 37.8125C24.0996 37.8738 24.1567 37.9217 24.2236 37.9502C24.2904 37.9787 24.3641 37.9865 24.4354 37.9728C24.5067 37.959 24.5724 37.9242 24.6242 37.8728C27.0306 35.4506 31.2536 33.4256 42.0002 33.4265C42.7958 33.4265 43.5588 33.1063 44.1214 32.5363C44.6839 31.9662 45 31.1931 45 30.387V3.03132C45.0011 2.53229 44.8809 2.04067 44.6501 1.59985C44.4192 1.15904 44.0848 0.782599 43.6764 0.503768Z"
-                                        fill="#59FF00" />
-                                </svg></span>
-                            <span class="part-title">Production magazine</span>
-                        </div>
-                        <p>
-                            À l’occasion de la célébration de l’anniversaire du <strong>Fo’o de Bamendjou</strong>,
-                            un <strong>magazine retraçant sa vie exceptionnelle</strong> sera produit.
-                            Ce magazine publiera également les meilleurs témoignages et photos marquantes envoyés par
-                            ses notables, amis, connaissances, admirateurs, épouses, princes et princesses.
-                        </p>
-                        <button>Participer</button>
-                    </a>
-                </div>
-                <div class="participer-item">
-
-                </div>
-            </div>
-        </section>
         <section id="contact-section">
 
         </section>
@@ -237,9 +209,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="styles/style.js"></script>
 </body>
 
 </html>

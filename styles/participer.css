@@ -5,7 +5,7 @@
   justify-content: space-between;
   gap: 2rem;
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 1rem auto 15rem auto;
   padding: 1rem;
   box-sizing: border-box;
   /* 🔹 Ajoute ceci : */
@@ -17,14 +17,10 @@
   /* ✅ deux colonnes identiques */
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  gap: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-sizing: border-box;
-  /* 🔹 Ajoute ceci : */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 1.5rem;
+  gap: 1rem;
 }
 
 .participer-item:hover {
@@ -32,7 +28,7 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.participer-item>div {
+.participer-item div {
   display: flex;
   align-items: center;
 }
@@ -45,11 +41,6 @@
   .participer-item:nth-child(4){
      min-height: 50vh;
   }
-}
-
-.button-section {
-  text-align: center;
-  margin-bottom: 100px;
 }
 
 .participer-item svg {
@@ -93,6 +84,10 @@
 
 .participer-item button:hover {
   background: #0056b3;
+}
+
+#participer-section{
+  padding-top: 10rem;
 }
 
 #participer-section .button {
@@ -177,4 +172,15 @@
   background-position: center;
   background-image: url("../images/img7.jpg");
   background-size: cover;
+}
+
+.participer-item a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  /* 🔹 Ajoute ceci : */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
